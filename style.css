@@ -23,6 +23,20 @@
       font-family: "Lucida Console", Courier, monospace;
   }
 
+  #header{
+    position: fixed;
+    top: 20%;
+    left: 37%;
+    color: grey;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  #img{
+    position: fixed;
+    top: 17%;
+    left: 53%;
+  }
+
   @keyframes slideright {
     from {
         background-position: 70000%;
