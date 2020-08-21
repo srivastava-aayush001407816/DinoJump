@@ -14,6 +14,15 @@
     bottom: 0px;
   }
 
+  #GameOver{
+      position: fixed;
+      top: 30%;
+      left: 45%;
+      color: grey;
+      text-align:center;
+      font-family: "Lucida Console", Courier, monospace;
+  }
+
   @keyframes slideright {
     from {
         background-position: 70000%;
@@ -37,8 +46,8 @@
     bottom: 0px;
     background-image: url('t-rex-background.png');
     background-repeat: repeat-x;
-    animation: slideright 600s infinite linear;
-    -webkit-animation: slideright 600s infinite linear;
+    animation: slideright 800s infinite linear;
+    -webkit-animation: slideright 800s infinite linear;
     width: 100%;
     height: 200px;
   }

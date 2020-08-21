@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                 while (grid.firstChild) {
                     grid.removeChild(grid.lastChild);
                 }
+                window.location.href = "gameOver.html";
             }
 
             obs -= 10;
@@ -80,4 +81,5 @@ document.addEventListener('DOMContentLoaded' , () => {
     }
 
     generateObstacle();
+    
 })
