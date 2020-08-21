@@ -1,3 +1,13 @@
+window.addEventListener("pageshow", (event) => {
+  var historyTraversal =
+    event.persisted ||
+    (typeof window.performance != "undefined" &&
+      window.performance.navigation.type === 2);
+  if (historyTraversal) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
 document.addEventListener('DOMContentLoaded' , () => {
 
     const dino = document.querySelector('.dino');
@@ -8,8 +18,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     let position=0;
     let gravity = 0.9;
     let isGameOver = false;
-
-
+    
     function control(e){
         if(e.keyCode===32){
             //console.log('pressed');
