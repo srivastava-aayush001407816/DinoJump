@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
             if(obs > 0 && obs < 60 && position < 60){
                 clearInterval(timerId);
-                alert.innerHTML = 'Game Over :(';
+                // alert.innerHTML = 'Game Over :(';
                 isGameOver = true;
                 body.removeChild(body.firstChild);
                 while (grid.firstChild) {
